@@ -1,4 +1,4 @@
-##Simple web stack
+## Simple web stack
 
 The diagram you've provided represents a basic web application architecture. Let's break down each component and its role as you've requested:
 
@@ -30,7 +30,7 @@ In summary, the diagram
 
 shows a basic web application architecture with a single server that may be located in a data center. This server could be a physical machine or a virtualized environment and runs an operating system that supports the web server software like Nginx, the application server, and the database server. The web server serves static content, the application server computes dynamic content, and the database stores application data. The DNS server translates domain names into IP addresses, and in this case, www.foobar.com has an A record pointing to an IP address. The setup is a single point of failure, meaning any part of it failing would cause the entire service to go down. Also, since there are no redundant systems or scalability solutions in place, the service cannot handle traffic beyond its maximum capacity and would experience downtime during maintenance or code deployment. All communication occurs over a network using the TCP/IP protocol suite.
 
-##Distributed web infrastructure
+## Distributed web infrastructure
 
 Based on the diagram provided, it shows a load balancing setup using HAProxy, which distributes incoming client requests (load) across multiple servers. The key points in the diagram indicate the use of a Round-Robin algorithm for load distribution, and both server setups labeled as "Active."
 
@@ -40,7 +40,7 @@ In contrast, an Active-Passive setup would have one server handling all the requ
 
 Given that both servers are labeled "Active" and there's a Round-Robin algorithm in use, it is reasonable to conclude that the load balancer is configured for an Active-Active setup. This setup is generally used to maximize resource utilization and ensure high availability without any idle hardware.
 
-##Secured and monitored web infrastructure
+## Secured and monitored web infrastructure
 
 Based on the information from the diagram and your questions, here's an explanation for each:
 
@@ -63,7 +63,7 @@ Based on the information from the diagram and your questions, here's an explanat
 * **Create metrics**: Within the monitoring tool, create a metric or query to count the number of requests (queries) per second. This is typically done by counting the number of lines (representing requests) in the access log over time and dividing by the number of seconds in that timeframe.
 * **Set up a dashboard**: Use the monitoring tool to set up a dashboard that will display the QPS in real-time. You may also want to set alerts for when the QPS goes above or below certain thresholds, which could indicate performance issues or downtime.
 
-##Scale up
+## Scale up
 
 
 The image you've uploaded appears to depict a high-availability architecture that uses multiple HAProxy instances configured in what seems to be a cluster setup.
