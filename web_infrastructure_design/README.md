@@ -79,3 +79,5 @@ The purpose of having a clustered setup for the HAProxy instances is to ensure h
 Each web server is connected to an application server with its own database, and all of these are monitored by SumoLogic, which is a cloud-based log management and analytics service. This setup allows for the scaling of traffic handling and resource management across the application's infrastructure.
 
 In summary, the diagram shows a robust and resilient web application architecture designed to handle significant amounts of traffic with redundancy at the load balancing layer to prevent downtime in case of individual component failures.
+
+Authors: Javid Jalilov, Gunay Gasimova
